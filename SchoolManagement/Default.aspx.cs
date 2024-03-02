@@ -11,7 +11,9 @@ namespace SchoolManagement
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            DataSetTableAdapters.StudentsTableAdapter dt= new DataSetTableAdapters().StudentsTableAdapter();
+            Repeater1.DataSource = dt.StudentList();
+            Repeater1.DataBind();
         }
     }
 }

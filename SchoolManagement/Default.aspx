@@ -47,30 +47,18 @@
             </tr>
      
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
+            <asp:Repeater ID="Repeater1" runat="server"></asp:Repeater>
+            <ItemTemplate>
+                <tr>
+                    <td><%#Eval("STDID") %>/td>
+                        <td><%#Eval("STDNAME") %>/td>
+                            <td><%#Eval("STDSURNAME") %>/td>
+                                <td><%#Eval("STDPHONE") %>/td>
+
+                                    <td><%#Eval("STDMAIL") %>/td>
+                                        <td><%#Eval("STDPASSWORD") %>/td>
+                </tr>
+            </ItemTemplate>
         </tbody>
     </table>
 </asp:Content>
