@@ -35,25 +35,31 @@
         }
     </style>
 
-    <table class="table table-hover custom-table">
-        <thead class="thead-dark">
+    <table class="table table-bordered table-hover custom-table">
+       
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">First</th>
                 <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">Telephone</th>
+                <th scope="col">Mail</th>
+                <th scope="col">Password</th>
             </tr>
-        </thead>
+     
         <tbody>
             <tr>
                 <th scope="row">1</th>
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
             </tr>
             <tr>
                 <th scope="row">2</th>
                 <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
                 <td>Thornton</td>
                 <td>@fat</td>
             </tr>
@@ -62,6 +68,8 @@
                 <td>Larry</td>
                 <td>the Bird</td>
                 <td>@twitter</td>
+                <td>Thornton</td>
+                <td>@fat</td>
             </tr>
         </tbody>
     </table>
