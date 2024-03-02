@@ -44,7 +44,7 @@
                             Lessons
                         </a>
                         <a href="#">
-                            <i class="glyphicon glyphicon-duplicate"></i>
+                            <i class="glyphicon glyphicon-calendar"></i>
                             Messages
                         </a>
                         
@@ -57,31 +57,31 @@
                     </li>
                     <li>
                         <a href="#">
-                            <i class="glyphicon glyphicon-paperclip"></i>
+                            <i class="glyphicon glyphicon-book"></i>
                             Notes
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="glyphicon glyphicon-paperclip"></i>
+                            <i class="glyphicon glyphicon-stats "></i>
                             Statistics
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="glyphicon glyphicon-paperclip"></i>
-                            Notes
+                            <i class="glyphicon glyphicon-list "></i>
+                            Graphs
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="glyphicon glyphicon-send"></i>
+                            <i class="glyphicon glyphicon-picture"></i>
                             Gallery
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="glyphicon glyphicon-send"></i>
+                            <i class="glyphicon glyphicon-setting-edit"></i>
                             Settings
                         </a>
                     </li>
