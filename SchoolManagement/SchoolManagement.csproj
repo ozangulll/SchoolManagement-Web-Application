@@ -340,6 +340,11 @@
     <Content Include="WebSchool.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -466,6 +471,17 @@
     <Content Include="Bootstrap\bootstrap-3.3.7\package.json" />
     <Content Include="Bootstrap\bootstrap-3.3.7\README.md" />
     <Content Include="Bootstrap\bootstrap-3.3.7\_config.yml" />
+    <Content Include="DataSet.xsc">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataSet.xss">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <Content Include="Teacher.Master" />
     <None Include="Web.Debug.config">
