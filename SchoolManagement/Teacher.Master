@@ -33,9 +33,9 @@
                             Student List
                         </a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="#">Add Student</a></li>
-                            <li><a href="#">Find Student</a></li>
-                            <li><a href="#">Delete Student</a></li>
+                            <li><a href="/AddStudent">  <i class="glyphicon glyphicon-plus"></i>Add Student</a></li>
+                            <li><a href="#"> <i class="glyphicon glyphicon-search"></i>>Find Student</a></li>
+                            <li><a href="#">  <i class="glyphicon glyphicon-trash"> </i> Delete Student</a></li>
                         </ul>
                     </li>
                     <li>
@@ -69,7 +69,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <i class="glyphicon glyphicon-list "></i>
+                            <i class="glyphicon glyphicon-dashboard "></i>
                             Graphs
                         </a>
                     </li>

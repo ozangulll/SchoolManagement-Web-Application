@@ -47,18 +47,20 @@
             </tr>
      
         <tbody>
-            <asp:Repeater ID="Repeater1" runat="server"></asp:Repeater>
+            <asp:Repeater ID="Repeater1" runat="server">
             <ItemTemplate>
                 <tr>
-                    <td><%#Eval("STDID") %>/td>
-                        <td><%#Eval("STDNAME") %>/td>
-                            <td><%#Eval("STDSURNAME") %>/td>
-                                <td><%#Eval("STDPHONE") %>/td>
+                    <td><%#Eval("STDID") %></td>
+                        
+                        <td><%#Eval("STDNAME") %></td>
+                            <td><%#Eval("STDSURNAME") %></td>
+                                <td><%#Eval("STDPHONE") %></td>
 
-                                    <td><%#Eval("STDMAIL") %>/td>
-                                        <td><%#Eval("STDPASSWORD") %>/td>
+                                    <td><%#Eval("STDMAIL") %></td>
+                                        <td><%#Eval("STDPASSWORD") %></td>
                 </tr>
             </ItemTemplate>
+                </asp:Repeater>
         </tbody>
     </table>
 </asp:Content>
