@@ -17,7 +17,7 @@
             
             <div>
              <asp:Label for="txtStdPhone" runat="server"> Student Phone</asp:Label>
-            <asp:TextBox ID="TextStdPhone" runat="server" CssClass="form-control"></asp:TextBox>
+            <asp:TextBox ID="txtStdPhone" runat="server" CssClass="form-control"></asp:TextBox>
                 </div>
             <br />
              <div>
@@ -35,7 +35,7 @@
             <asp:TextBox ID="txtStdPhoto" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
         </div>
-        <asp:Button ID="Button1" runat="server" Text="Save" CssClass="btn btn-info" />
+        <asp:Button ID="Button1" runat="server" Text="Save" CssClass="btn btn-info" OnClick="Button1_Click" />
 
     </form>
 </asp:Content>

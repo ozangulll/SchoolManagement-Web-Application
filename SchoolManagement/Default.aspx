@@ -39,8 +39,8 @@
        
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
+                <th scope="col">Name</th>
+                <th scope="col">Surname</th>
                 <th scope="col">Telephone</th>
                 <th scope="col">Mail</th>
                 <th scope="col">Password</th>

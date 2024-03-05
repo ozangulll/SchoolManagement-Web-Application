@@ -13,5 +13,13 @@ namespace SchoolManagement
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            DataSetTableAdapters.StudentsTableAdapter dt = new DataSetTableAdapters.StudentsTableAdapter();
+            dt.AddStudent(txtStdName.Text, txtStdSurname.Text, txtStdPhone.Text, txtStdMail.Text,
+                txtStdPassword.Text,txtStdPhoto.Text);
+            Response.Redirect("Default.aspx");
+        }
     }
 }
