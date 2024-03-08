@@ -12,28 +12,29 @@
             width: 100%;
         }
 
-            .custom-table th, .custom-table td {
-                border: 1px solid #ddd; /* Set border */
-                padding: 8px; /* Add padding */
-                text-align: left; /* Align text */
-            }
+        .custom-table th, .custom-table td {
+            border: 1px solid #ddd; /* Set border */
+            padding: 8px; /* Add padding */
+            text-align: left; /* Align text */
+        }
 
-            .custom-table th {
-                background-color: #858487; /* Set background color for header */
-                color: white; /* Set text color for header */
-            }
+        .custom-table th {
+            background-color: #858487; /* Set background color for header */
+            color: white; /* Set text color for header */
+        }
 
-            .custom-table tbody tr:nth-child(even) {
-                background-color: #f2f2f2; /* Set background color for even rows */
-            }
+        .custom-table tbody tr:nth-child(even) {
+            background-color: #f2f2f2; /* Set background color for even rows */
+        }
 
-            .custom-table tbody tr:hover {
-                background-color: #ddd; /* Set background color for hovered rows */
-            }
+        .custom-table tbody tr:hover {
+            background-color: #ddd; /* Set background color for hovered rows */
+        }
 
-            .custom-table th, .custom-table td {
-                padding: 15px; /* Increase padding for better readability */
-            }
+        .custom-table th,
+        .custom-table td {
+            padding: 15px; /* Increase padding for better readability */
+        }
     </style>
 
     <table class="table table-bordered table-hover custom-table">
@@ -52,18 +53,16 @@
             <asp:Repeater ID="Repeater1" runat="server">
                 <ItemTemplate>
                     <tr>
-                        <td><%#Eval("STDID") %></td>
-
-                        <td><%#Eval("STDNAME") %></td>
-                        <td><%#Eval("STDSURNAME") %></td>
-                        <td><%#Eval("STDPHONE") %></td>
-
-                        <td><%#Eval("STDMAIL") %></td>
-                        <td><%#Eval("STDPASSWORD") %></td>
-    <td>
-        <asp:HyperLink ID="Delete" runat="server" CssClass="btn btn-danger">Delete</asp:HyperLink>
-        <asp:HyperLink ID="Update" runat="server" CssClass="btn btn-success">Update</asp:HyperLink>
-    </td>
+                        <td><%# Eval("STDID") %></td>
+                        <td><%# Eval("STDNAME") %></td>
+                        <td><%# Eval("STDSURNAME") %></td>
+                        <td><%# Eval("STDPHONE") %></td>
+                        <td><%# Eval("STDMAIL") %></td>
+                        <td><%# Eval("STDPASSWORD") %></td>
+                        <td>
+                            <asp:HyperLink ID="Delete" NavigateUrl='<%# "Deletestudent.aspx?STDID=" + Eval("STDID") %>' runat="server" CssClass="btn btn-danger">Delete</asp:HyperLink>
+                            <asp:HyperLink ID="Update" NavigateUrl='<%# "Uatestudent.aspx?STDID=" + Eval("STDID") %>' runat="server" CssClass="btn btn-success">Update</asp:HyperLink>
+                        </td>
                     </tr>
                 </ItemTemplate>
             </asp:Repeater>
