@@ -61,7 +61,8 @@
                         <td><%#Eval("STDMAIL") %></td>
                         <td><%#Eval("STDPASSWORD") %></td>
     <td>
-
+        <asp:HyperLink ID="Delete" runat="server" CssClass="btn btn-danger">Delete</asp:HyperLink>
+        <asp:HyperLink ID="Update" runat="server" CssClass="btn btn-success">Update</asp:HyperLink>
     </td>
                     </tr>
                 </ItemTemplate>
