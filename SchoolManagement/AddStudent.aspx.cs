@@ -21,5 +21,6 @@ namespace SchoolManagement
                 txtStdPassword.Text,txtStdPhoto.Text);
             Response.Redirect("Default.aspx");
         }
+  
     }
 }
